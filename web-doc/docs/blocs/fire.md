@@ -2,4 +2,4 @@
 
 ## Description
 
-Fire is FPGA design that populated the Apollo card.
+Fire is a FPGA design populating the Apollo card.
