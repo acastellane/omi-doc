@@ -1,0 +1,36 @@
+site_name: OMI Doc
+repo_name: GitHub
+repo_url: https://github.com/OpenCAPI/omi-doc
+edit_uri: ""  
+
+nav:
+  - About:
+    - 'Overview': 'index.md'
+  - Main Elements:
+          - 'FIRE Description': 'blocs/fire.md'
+          - 'APOLLO Description': 'blocs/apollo.md'
+          - 'ICE Description': 'blocs/ice.md'
+          - 'GEMINI Description': 'blocs/gemini.md'
+  - Misc:
+    - 'Document Guide': 'misc/doc-guide.md'
+theme:
+  name: mkdocs 
+# Code block colors: Dark
+#  hljs_style: hybrid
+#  hljs_style: monokai
+#  hljs_style: tomorrow-night
+#  hljs_style: railscasts
+# Code block colors: Light
+#  hljs_style: googlecode
+#  hljs_style: solarized-light
+  hljs_style: github
+#  hljs_style: foundation
+
+extra_css:
+  - extra.css
+
+extra_javascript:
+  - extra.js
+
+markdown_extensions:
+  - admonition
