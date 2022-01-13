@@ -112,20 +112,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#omi-overview" class="nav-link">OMI Overview</a>
+            <li class="nav-item" data-level="2"><a href="#omi-overview" class="nav-link">OMI Overview</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#omi-stands-for-open-memory-interface" class="nav-link">OMI, stands for Open Memory Interface</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#what-is-omi" class="nav-link">What is OMI ?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#what-can-i-do-with-omi" class="nav-link">What can I do with OMI</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -133,26 +121,19 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="omi-overview">OMI Overview</h1>
-<p><img alt="oc-accel-bar" src="pictures/oc-accel-bar.png" /></p>
 <p><img alt="open-memory-interface-omi-wht" src="pictures/open-memory-interface-omi-wht.png" /></p>
-<h2 id="omi-stands-for-open-memory-interface"><strong>OMI</strong>, stands for Open Memory Interface</h2>
+<h2 id="omi-overview"><strong>OMI Overview </strong></h2>
+<p><strong>OMI</strong>, stands for Open Memory Interface</p>
+<p>Starting with Power10 processor, the host memory is now connected to the processor through a new OMI serial interface. This Open Memory Interface (based on OpenCAPI3.1 protocol) opens a new era in memory attachment since it allows to connect new types of memories to replace conventional DDR host memory.</p>
+<p>Thanks to the serial connection, much more memory interfaces are connected to the processor chip. This means Power10 chip has 1 Terabyte/s bandwidth on memory side and the same on external hardware supporting up to 2 Petabytes of addressable memories!</p>
+<p>Thanks to the very low latency, this OMI near-memory connection brings plenty of new memory disaggregation possibilities. "Memory inception" for example, allows a process to borrow host memory from another server. "Pool of memories" can now be built to optimize the sharing of the most expensive resource of our servers.</p>
+<p>Using this CAPI/OpenCAPI technology associated with FPGAs has not only solved unbelievable bottlenecks, but has drastically decreased the power consumption of previous solutions.</p>
 <p>All the code and related materials are contributed to different Github repositories: </p>
 <ul>
-<li>
-<p><a href="https://github.com/OpenCAPI/omi_host_fire">https://github.com/OpenCAPI/omi_host_fire</a>.</p>
-</li>
-<li>
-<p><a href="https://github.com/OpenCAPI/omi_asic_device_reference_design">https://github.com/OpenCAPI/omi_asic_device_reference_design</a>.</p>
-</li>
-<li>
-<p><a href="https://github.com/OpenCAPI/omi_device_ice">https://github.com/OpenCAPI/omi_device_ice</a>.</p>
-</li>
-</ul>
-<h2 id="what-is-omi">What is OMI ?</h2>
-<p>OMI is based on OpenAPI development and is aimed at offering a fast generic interface to address different  types of memories.</p>
-<h2 id="what-can-i-do-with-omi">What can I do with OMI</h2>
-<p>...</p></div>
+<li><a href="https://github.com/OpenCAPI/omi_asic_device_reference_design">https://github.com/OpenCAPI/omi_asic_device_reference_design</a>.</li>
+<li><a href="https://github.com/OpenCAPI/omi_host_fire">https://github.com/OpenCAPI/omi_host_fire</a>.</li>
+<li><a href="https://github.com/OpenCAPI/omi_device_ice">https://github.com/OpenCAPI/omi_device_ice</a>.</li>
+</ul></div>
             </div>
         </div>
 
