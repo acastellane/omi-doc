@@ -1,17 +1,20 @@
 # omi-doc
-Raw documentation repository for several content available in opencapi github repos
+Raw documentation repository for several content available in OMI github repos
 
-The documentation uses mkdocs as a Content Management System to publish the content.
-This repository barely stores the raw content of the oc-accel documentation.
+The documentation uses mkdocs as a Content Management System (CMS) to publish the content.
+This repository barely stores the raw or source content of the OMI documentation.
 
-The output website which is showing the actual doc with mkdocs is:
+To update the published doc, the raw content is required to be transformed in publishable data.
+Once transformed, `mkdocs gh-deploy` operation will automatically update the *gh-pages* branch of this repository.
+This in turn will make the publication up to date.
+
+The output website which is showing the actual doc with mkdocs could be :
  <https://opencapi.github.io/omi-doc/>
 
-temporarily use https://github.com/acastellane/omi-doc
+We **temporarily** use 
 
-Watch out that this repository is not automatically linked to the publication.
-Every change in the raw doc should be :
+- https://github.com/acastellane/omi-doc
+- https://acastellane.github.io/omi-doc/
 
-* raw published in this repo
-* nicely published using "mkdocs gh-deploy" as explained in oc-accel documentation user's guide :
-  <https://opencapi.github.io/omi-doc/misc/doc-guide/>
+Details can be found documentation user's guide :
+  https://acastellane.github.io/omi-doc/misc/doc-guide/
