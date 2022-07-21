@@ -16,8 +16,9 @@ Using this CAPI/OpenCAPI technology associated with FPGAs has not only solved un
 
  All the code and related materials are contributed to different Github repositories: 
 
-- <https://github.com/OpenCAPI/omi_asic_device_reference_design>.
-- <https://github.com/OpenCAPI/omi_host_fire>.
-- <https://github.com/OpenCAPI/omi_device_ice>.
+- [](https://github.com/OpenCAPI/omi_enablement/) contains an example of host on a FMC+ board to evaluate DDMIMs modules
+- <https://github.com/OpenCAPI/omi_asic_device_reference_design> contains an asic design example
+- <https://github.com/OpenCAPI/omi_host_fire> contains a host FPGA example
+- <https://github.com/OpenCAPI/omi_device_ice> contains a device FPGA example
 
 

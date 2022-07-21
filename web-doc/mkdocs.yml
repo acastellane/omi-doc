@@ -1,6 +1,6 @@
 site_name: OMI Doc
 repo_name: GitHub
-repo_url: https://github.com/OpenCAPI/omi-doc
+repo_url: https://github.com/OpenCAPI/omi-enablement
 edit_uri: ""  
 
 nav:
@@ -8,9 +8,10 @@ nav:
     - 'Overview': 'index.md'
   - Main Elements:
           - 'FIRE Description': 'blocs/fire.md'
-          - 'APOLLO Description': 'blocs/apollo.md'
           - 'ICE Description': 'blocs/ice.md'
           - 'GEMINI Description': 'blocs/gemini.md'
+          - 'FMC+ ENABLEMENT Description': 'blocs/enablement.md'
+
   - Misc:
     - 'Document Guide': 'misc/doc-guide.md'
 theme:
