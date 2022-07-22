@@ -35,17 +35,12 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Main Elements <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
     <a href="../.." class="dropdown-item">Overview</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Main Elements <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
                                     
 <li>
     <a href="../../blocs/fire/" class="dropdown-item">FIRE Description</a>
@@ -173,9 +168,9 @@
 <li>Alternative choice is <a href="https://inkscape.org/">Inkscape</a> which is a free drawing tool and can help you draw and convert vector graphics.</li>
 </ul>
 <h2 id="website-structure">Website Structure</h2>
-<p>First, you need to git clone the oc-accel repository and go to <code>web-doc</code> directory. Make sure you are working on a branch other than master.</p>
-<pre><code class="bash">$ git clone git@github.com:OpenCAPI/oc-accel-doc.git
-$ cd oc-accel/web-doc
+<p>First, you need to git clone the omi-doc repository and go to <code>web-doc</code> directory. Make sure you are working on a branch other than master.</p>
+<pre><code class="bash">$ git clone git@github.com:OpenCAPI/omi-doc.git
+$ cd omi-doc/web-doc
 Create a branch if needed:
   $ git branch &lt;new-branch-name&gt;
 $ git checkout &lt;A branch other than master&gt;
@@ -183,29 +178,16 @@ $ git checkout &lt;A branch other than master&gt;
 
 <p>The <code>docs</code> folder is where to put the markdown files, and the <code>mkdocs.yml</code> lists the website structure and global definitons. For example, this site has a structure like:</p>
 <pre><code>nav:
-  - Home: 'index.md'
-  - User Guide:
-    - 'Prepare Environment': 'user-guide/prepare-env.md'
-    - 'Run an example': 'user-guide/run-example.md'
-    - 'Create a new action': 'user-guide/new-action.md'
-    - 'Co-Simulation': 'user-guide/co-simulation.md'
-    - 'FPGA Image build': 'user-guide/make-image.md'
-    - 'Optimize HLS action': 'user-guide/optimize-hls.md'
-    - 'Deploy on Power Server': 'user-guide/deploy.md'
-    - 'Debug an issue': 'user-guide/debug-issue.md'
-    - 'Command Reference': 'user-guide/command-reference.md'
-  - Examples:
-    - 'hdl_example': 'actions-doc/hdl-example.md'
-    - 'hdl_helloworld': 'actions-doc/hdl-helloworld.md'
-    - 'hls_helloworld_1024': 'actions-doc/hls-helloworld_1024.md'
-    - 'hls_memcopy': 'actions-doc/hls-memcopy.md'
-  - Deep Dive:
-    - 'SNAP Software API': 'deep-dive/libosnap.md'
-    - 'SNAP Registers': 'deep-dive/registers.md'
-    - 'SNAP Logic Design': 'deep-dive/snap_core.md'
-    - 'New Board Support': 'deep-dive/board-package.md'
+  - Main Elements:
+          - 'Overview': 'index.md'
+          - 'FIRE Description': 'blocs/fire.md'
+          - 'ICE Description': 'blocs/ice.md'
+          - 'GEMINI Description': 'blocs/gemini.md'
+          - 'FMC+ ENABLEMENT Description': 'blocs/enablement.md'
+
   - Misc:
     - 'Document Guide': 'misc/doc-guide.md'
+
 </code></pre>
 
 <p>You can edit them as needed.</p>
@@ -214,7 +196,7 @@ $ git checkout &lt;A branch other than master&gt;
 <p>Now it's time to work with an editor (i.e, typora) to write the documents. You also may need to learn some markdown syntax. Don't worry, that's easy. And please turn on the "spell checking" in your Markdown editor.</p>
 <p>In your <code>terminal</code> (MacOS or Linux), or <code>cmd</code> (Windows), start a serve process:</p>
 <pre><code class="bash"># enter in the directory where mkdocs.yml is located
-cd ~/oc-accel-doc/web-doc
+cd ~/omi-doc/web-doc
 #launch a local webserver to test your mods
 mkdocs serve
 </code></pre>
@@ -274,10 +256,10 @@ void bubbleSort(int arr[], int n)
 <p>This is a dangerous error.</p>
 </div>
 <h2 id="deploy-to-github-pages">Deploy to Github Pages</h2>
-<p>When most of the edition work is done, and it's time to commit your documents to oc-accel github.</p>
+<p>When most of the edition work is done, and it's time to commit your documents to omi-doc github.</p>
 <p>First, you should commit and push your changes of source files (in <code>web-doc</code>) to git repository. Create pull request, ask someone to review the documents, merge them into master branch after getting approvements.</p>
 <p>Then you can simply publish website with just one step:</p>
-<pre><code class="bash">cd &lt;PATH&gt;/oc-accel-doc/web-doc
+<pre><code class="bash">cd &lt;PATH&gt;/omi-doc/web-doc
 mkdocs gh-deploy
 </code></pre>
 
