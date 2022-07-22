@@ -140,9 +140,9 @@
 <p><img alt="vcu_tormem_setup" src="../../pictures/vcu_tormem_setup.PNG" /></p>
 <p>The setup allows evaluation of 2 DDIM modules in slots A and B.</p>
 <p>Some code is required to synchronise and test the OMI DDIMMs.</p>
-<p>Either the code is executed in a companion raspberry pi, or it can be run in an embedded microblaze processor.</p>
-<p>Example of python code is available at : [Python Code]</p>
-<p><a href="https://github.com/OpenCAPI/omi_enablement/tree/main/python">Python Code</a></p>
+<p>Either the code is executed in a companion raspberry pi or any I2C capable computer, or even in an embedded microblaze processor (the latter being under development)</p>
+<p>Python source code is available at : <a href="https://github.com/OpenCAPI/omi_enablement/tree/main/python">Python Code</a></p>
+<p>Python code documentation is available at : <a href="../python">Python Documentation</a></p>
 <ul>
 <li>Checks I2C tree</li>
 <li>Synchronizes DDIMMs</li>
@@ -164,7 +164,8 @@
 <h2 id="enablement-steps">ENABLEMENT STEPS</h2>
 <p>git clone the "<a href="https://github.com/acastellane/omi_host_fire/tree/no_encrypt_vcu128">no-encrypt_vcu128</a>" branch of Fire design. </p>
 <p>First synthetise, implement and generate bitstream of "FIRE" design for vcu128 using the specific branch as specified in the README.md file.</p>
-<p>git clone the <a href="https://github.com/OpenCAPI/omi_enablement/">https://github.com/OpenCAPI/omi_enablement/</a> and use /python directory with a debugging raspberry pi or any computer with I2C capability to check you can see the design.</p></div>
+<p>git clone the <a href="https://github.com/OpenCAPI/omi_enablement/">https://github.com/OpenCAPI/omi_enablement/</a> and use /python directory with a debugging raspberry pi or any computer with I2C capability to check you can see the design.</p>
+<p>Check Python code documentation at : <a href="../python">Python Documentation</a> for further experiments.</p></div>
             </div>
         </div>
 
