@@ -35,7 +35,7 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Main Elements <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
@@ -118,12 +118,13 @@
 
 <p><img alt="open-memory-interface-omi-wht" src="pictures/open-memory-interface-omi-wht.png" /></p>
 <h2 id="omi-overview"><strong>OMI Overview </strong></h2>
-<p><strong>OMI</strong>, stands for Open Memory Interface</p>
-<p>Starting with Power10 processor, the host memory is now connected to the processor through a new OMI serial interface. This Open Memory Interface (based on OpenCAPI3.1 protocol) opens a new era in memory attachment since it allows to connect new types of memories to replace conventional DDR host memory.</p>
-<p>Thanks to the serial connection, much more memory interfaces are connected to the processor chip. Hence IBM's Power10 chip is the first processor offering 1 Terabyte/s bandwidth on memory side and the same bandwitdh with external hardware supporting up to 2 Petabytes of addressable memories!</p>
+<p><strong>OMI</strong>, stands for Open Memory Interface. </p>
+<p>Check OMI web site at <a href="https://openmemoryinterface.org/open-projects/">https://openmemoryinterface.org/open-projects/</a></p>
+<p>OMI is a highly tuned bus that was developed for near memory and is  easily migratable to emerging memory solutions (e.g., Storage Class  Memory). This serial coherent bus, a subset of <a href="https://opencapi.org/">OpenCAPI</a> (3.1 version), was architected specifically for the interface between a processor and  Near Memory having absolute minimum latency with significant bandwidth  and capacity. OMI is the solution to our evolving industry’s demand for Near Memory as data centers evolve from compute centric to becoming  data centric.</p>
+<p>Due to the smaller beachfront required by the OMI serial interface,  processors using OMI are able to support many more memory channels. For  example, IBM's Power10 is the first processor offering 1 Terabyte/s bandwidth on the memory side. The same bandwidth with external hardware is able to support up to 2 Petabytes of addressable memory.</p>
 <p>Thanks to the very low latency, this OMI near-memory connection brings plenty of new memory disaggregation possibilities. "Memory inception" for example, allows a process to borrow host memory from another server. "Pool of memories" can now be built to optimize the sharing of the most expensive resource of our servers.</p>
 <p>Using this CAPI/OpenCAPI technology associated with FPGAs has not only solved unbelievable bottlenecks, but has drastically decreased the power consumption of previous solutions.</p>
-<p>This Documentation site presents on overview of host and device chips as well as an enablement guide.</p>
+<p>This Documentation site presents an overview of host and device chips as well as an enablement guide.</p>
 <ul>
 <li><a href="./blocs/fire">Fire host</a> design example</li>
 <li><a href="./blocs/ice">Ice device</a> design example</li>
