@@ -4,13 +4,13 @@ repo_url: https://github.com/OpenCAPI/omi-enablement
 edit_uri: ""  
 
 nav:
-  - About:
-    - 'Overview': 'index.md'
-  - Main Elements:
+  - Home:
+          - 'Overview': 'index.md'
+          - 'FMC+ ENABLEMENT Description': 'blocs/enablement.md'
           - 'FIRE Description': 'blocs/fire.md'
+          - 'Apollo Description': 'blocs/apollo.md'
           - 'ICE Description': 'blocs/ice.md'
           - 'GEMINI Description': 'blocs/gemini.md'
-          - 'FMC+ ENABLEMENT Description': 'blocs/enablement.md'
 
   - Misc:
     - 'Document Guide': 'misc/doc-guide.md'

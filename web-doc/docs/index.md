@@ -4,21 +4,30 @@
 
 ## **OMI Overview **
 
-**OMI**, stands for Open Memory Interface
+**OMI**, stands for Open Memory Interface. 
 
-Starting with Power10 processor, the host memory is now connected to the processor through a new OMI serial interface. This Open Memory Interface (based on OpenCAPI3.1 protocol) opens a new era in memory attachment since it allows to connect new types of memories to replace conventional DDR host memory.
+Check OMI web site at [https://openmemoryinterface.org/open-projects/](https://openmemoryinterface.org/open-projects/)
 
-Thanks to the serial connection, much more memory interfaces are connected to the processor chip. Hence IBM Power10 chip is the first processor to offer 1 Terabyte/s bandwidth on memory side and the same bandwitdh with external hardware supporting up to 2 Petabytes of addressable memories!
+OMI is a highly tuned bus that was developed for near memory and is  easily migratable to emerging memory solutions (e.g., Storage Class  Memory). This serial coherent bus, a subset of [OpenCAPI](https://opencapi.org/) (3.1 version), was architected specifically for the interface between a processor and  Near Memory having absolute minimum latency with significant bandwidth  and capacity. OMI is the solution to our evolving industry’s demand for Near Memory as data centers evolve from compute centric to becoming  data centric.
+
+Due to the smaller beachfront required by the OMI serial interface,  processors using OMI are able to support many more memory channels. For  example, IBM's Power10 is the first processor offering 1 Terabyte/s bandwidth on the memory side. The same bandwidth with external hardware is able to support up to 2 Petabytes of addressable memory.
 
 Thanks to the very low latency, this OMI near-memory connection brings plenty of new memory disaggregation possibilities. "Memory inception" for example, allows a process to borrow host memory from another server. "Pool of memories" can now be built to optimize the sharing of the most expensive resource of our servers.
 
 Using this CAPI/OpenCAPI technology associated with FPGAs has not only solved unbelievable bottlenecks, but has drastically decreased the power consumption of previous solutions.
 
+This Documentation site presents an overview of host and device chips as well as an enablement guide.
+
+- [Fire host](./blocs/fire) design example
+- [Ice device](./blocs/ice) design example
+- [Gemini device card](./blocs/gemini) design example
+- [OMI Enablement Guide](./blocs/enablement)
+
  All the code and related materials are contributed to different Github repositories: 
 
 - [https://github.com/OpenCAPI/omi_enablement/](https://github.com/OpenCAPI/omi_enablement/) contains an example of host on a FMC+ board to evaluate DDMIMs modules
-- <https://github.com/OpenCAPI/omi_asic_device_reference_design> contains an asic design example
-- <https://github.com/OpenCAPI/omi_host_fire> contains a host FPGA example
-- <https://github.com/OpenCAPI/omi_device_ice> contains a device FPGA example
+- <https://github.com/OpenCAPI/omi_asic_device_reference_design> contains an ASIC device reference design
+- <https://github.com/OpenCAPI/omi_host_fire> contains a host FPGA reference design
+- <https://github.com/OpenCAPI/omi_device_ice> contains a device FPGA reference design
 
 

@@ -176,7 +176,7 @@ python3 omi.py sync -d ab
 ```
 python3 omi.py checksync -d a
 python3 omi.py checksync -d b
-python3 omi.py checksync -d ab`
+python3 omi.py checksync -d ab
 ```
 
 

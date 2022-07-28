@@ -2,11 +2,13 @@
 
 ## Description
 
-Fire is a OMI host FPGA design.
+Fire is an OMI host FPGA reference design based on the [OpenCAPI 3.1 Transaction and Data Layer Architecture Specification](https://opencapi.org/technical/specifications/).
 
-Initial design was developed to populate the Apollo card.
+The design was developed to be used in an "[Apollo](../apollo)" card.
+
+This "[Apollo](../apollo/)" card was developed for use in doing post-silicon  validation of OMI memory buffers as well as various DDIMM provider without the need for having an actual processor piece of silicon to drive the OMI traffic.
 
 A branch "[no-encrypt_vcu128](https://github.com/acastellane/omi_host_fire/tree/no_encrypt_vcu128)" has been created to allow usage of Fire in a VCU128 board with a FMC+ connector and an adaptation board.
 
-Check any enablement information on the [enablement page](../enablement)
+Check for enablement information on the [enablement page](../enablement)
 

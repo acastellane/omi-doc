@@ -50,11 +50,11 @@ You can simply edit the markdown (.md) files by any text editor, but it's better
 
 ## Website Structure
 
-First, you need to git clone the oc-accel repository and go to `web-doc` directory. Make sure you are working on a branch other than master.
+First, you need to git clone the omi-doc repository and go to `web-doc` directory. Make sure you are working on a branch other than master.
 
 ``` bash
-$ git clone git@github.com:OpenCAPI/oc-accel-doc.git
-$ cd oc-accel/web-doc
+$ git clone git@github.com:OpenCAPI/omi-doc.git
+$ cd omi-doc/web-doc
 Create a branch if needed:
   $ git branch <new-branch-name>
 $ git checkout <A branch other than master>
@@ -64,29 +64,16 @@ The `docs` folder is where to put the markdown files, and the `mkdocs.yml` lists
 
 ```
 nav:
-  - Home: 'index.md'
-  - User Guide:
-    - 'Prepare Environment': 'user-guide/prepare-env.md'
-    - 'Run an example': 'user-guide/run-example.md'
-    - 'Create a new action': 'user-guide/new-action.md'
-    - 'Co-Simulation': 'user-guide/co-simulation.md'
-    - 'FPGA Image build': 'user-guide/make-image.md'
-    - 'Optimize HLS action': 'user-guide/optimize-hls.md'
-    - 'Deploy on Power Server': 'user-guide/deploy.md'
-    - 'Debug an issue': 'user-guide/debug-issue.md'
-    - 'Command Reference': 'user-guide/command-reference.md'
-  - Examples:
-    - 'hdl_example': 'actions-doc/hdl-example.md'
-    - 'hdl_helloworld': 'actions-doc/hdl-helloworld.md'
-    - 'hls_helloworld_1024': 'actions-doc/hls-helloworld_1024.md'
-    - 'hls_memcopy': 'actions-doc/hls-memcopy.md'
-  - Deep Dive:
-    - 'SNAP Software API': 'deep-dive/libosnap.md'
-    - 'SNAP Registers': 'deep-dive/registers.md'
-    - 'SNAP Logic Design': 'deep-dive/snap_core.md'
-    - 'New Board Support': 'deep-dive/board-package.md'
+  - Main Elements:
+          - 'Overview': 'index.md'
+          - 'FIRE Description': 'blocs/fire.md'
+          - 'ICE Description': 'blocs/ice.md'
+          - 'GEMINI Description': 'blocs/gemini.md'
+          - 'FMC+ ENABLEMENT Description': 'blocs/enablement.md'
+
   - Misc:
     - 'Document Guide': 'misc/doc-guide.md'
+
 ```
 
 You can edit them as needed.
@@ -101,7 +88,7 @@ In your `terminal` (MacOS or Linux), or `cmd` (Windows), start a serve process:
 
 ``` bash
 # enter in the directory where mkdocs.yml is located
-cd ~/oc-accel-doc/web-doc
+cd ~/omi-doc/web-doc
 #launch a local webserver to test your mods
 mkdocs serve
 ```
@@ -183,14 +170,14 @@ It will be shown as:
 
 ## Deploy to Github Pages
 
-When most of the edition work is done, and it's time to commit your documents to oc-accel github.
+When most of the edition work is done, and it's time to commit your documents to omi-doc github.
 
 First, you should commit and push your changes of source files (in `web-doc`) to git repository. Create pull request, ask someone to review the documents, merge them into master branch after getting approvements.
 
 Then you can simply publish website with just one step:
 
 ``` bash
-cd <PATH>/oc-accel-doc/web-doc
+cd <PATH>/omi-doc/web-doc
 mkdocs gh-deploy
 ```
 
