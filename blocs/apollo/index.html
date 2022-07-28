@@ -34,7 +34,7 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -43,7 +43,15 @@
 </li>
                                     
 <li>
+    <a href="../enablement/" class="dropdown-item">FMC+ ENABLEMENT Description</a>
+</li>
+                                    
+<li>
     <a href="../fire/" class="dropdown-item">FIRE Description</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Apollo Description</a>
 </li>
                                     
 <li>
@@ -52,10 +60,6 @@
                                     
 <li>
     <a href="../gemini/" class="dropdown-item">GEMINI Description</a>
-</li>
-                                    
-<li>
-    <a href="../enablement/" class="dropdown-item">FMC+ ENABLEMENT Description</a>
 </li>
                                 </ul>
                             </li>
@@ -76,6 +80,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../fire/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../ice/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                             <li class="nav-item">
                                 <a href="https://github.com/OpenCAPI/omi-enablement" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
                             </li>
@@ -112,7 +126,8 @@
 
 <h1 id="apollo-description">Apollo Description</h1>
 <h2 id="description">Description</h2>
-<p>Apollo is a card hosting Fire FPGA RTL design and aimed at interconnecting a DIMM with a SLIM/SAS connector (using OMI - Open Memory Interface).</p></div>
+<p>This "Apollo" card was developed for use in doing post-silicon  validation of OMI memory buffers as well as various DDIMM provider without the need for having an actual processor piece of silicon to drive the OMI traffic.</p>
+<p>The "Apollo" card hosts an FPGA containing <a href="../fire/">"FIRE" OMI host side FPGA reference design</a>.</p></div>
             </div>
         </div>
 

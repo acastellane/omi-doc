@@ -43,7 +43,15 @@
 </li>
                                     
 <li>
+    <a href="./" class="dropdown-item active">FMC+ ENABLEMENT Description</a>
+</li>
+                                    
+<li>
     <a href="../fire/" class="dropdown-item">FIRE Description</a>
+</li>
+                                    
+<li>
+    <a href="../apollo/" class="dropdown-item">Apollo Description</a>
 </li>
                                     
 <li>
@@ -52,10 +60,6 @@
                                     
 <li>
     <a href="../gemini/" class="dropdown-item">GEMINI Description</a>
-</li>
-                                    
-<li>
-    <a href="./" class="dropdown-item active">FMC+ ENABLEMENT Description</a>
 </li>
                                 </ul>
                             </li>
@@ -77,12 +81,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../gemini/" class="nav-link">
+                                <a rel="prev" href="../.." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../../misc/doc-guide/" class="nav-link">
+                                <a rel="next" href="../fire/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -130,11 +134,11 @@
 
 <h1 id="omi-enablement-guide">OMI ENABLEMENT Guide</h1>
 <h2 id="hardware-description">HARDWARE DESCRIPTION</h2>
-<p>For the purpose of opensourcing the design, a collaboration between OMI members led to a tuning of omi host fpga design "Fire" to be used in a <a href="https://www.xilinx.com/products/boards-and-kits/vcu128.htmlhttps://www.xilinx.com/products/boards-and-kits/vcu128.html">VCU128 Card</a></p>
+<p>For the purpose of open sourcing the design, a collaboration between OMI members led to a tuning of an omi host FPGA reference design "<a href="../fire/">Fire</a>" to be used in a <a href="https://www.xilinx.com/products/boards-and-kits/vcu128.htmlhttps://www.xilinx.com/products/boards-and-kits/vcu128.html">VCU128 Card</a> from AMD/Xilinx.</p>
 <p>With addition of a simple FMC+ connected add-on card, any OMI compatible memory DDIMM module can be evaluated.</p>
 <p><img alt="vcu_tormem_setup" src="../../pictures/vcu_tormem_setup.PNG" /></p>
-<p>The setup allows evaluation of 2 DDIM modules in slots A and B.</p>
-<p>Some code is required to synchronise and test the OMI DDIMMs.</p>
+<p>The setup allows evaluation of 2 DDIMM modules in slots A and B.</p>
+<p>Some code is required to synchronize and test the OMI DDIMMs.</p>
 <p>Either the code is executed in a companion raspberry pi or any I2C capable computer, or even in an embedded microblaze processor (the latter being under development)</p>
 <p>Python source code is available at : <a href="https://github.com/OpenCAPI/omi_enablement/tree/main/python">Python Code</a></p>
 <p>Python code documentation is available at : <a href="../python">Python Documentation</a></p>
@@ -146,19 +150,20 @@
 <p>!!! Note    The Raspberry pi can host an Cronus server, should you want to evaluate in a Cronus environment.</p>
 <h2 id="requirements">REQUIREMENTS</h2>
 <p>Hardware requirements :</p>
+<p>Procure the following:</p>
 <ul>
-<li>Get a VCU128 Board</li>
-<li>an adapter board</li>
-<li>at least a DDIMM module</li>
-<li>a usb relay card to ensure automated fire reset / 3.3V / 12V POWER control (will be included in adapter board version 2)</li>
+<li>A VCU128 Board from <a href="https://www.xilinx.com/">AMD/Xilinx</a></li>
+<li>An adapter board from <a href="https://www.tormem.com/">Tormem</a></li>
+<li>At least one DDIMM module</li>
+<li>A USB relay card to ensure automated fire reset / 3.3V / 12V POWER control (will be included in adapter board version 2)</li>
 </ul>
 <p>Software requirements : </p>
 <ul>
-<li>obtain a AMD/Xilinx Licence for Vivado. Use <strong>2018.3</strong> version.</li>
+<li>Obtain an AMD/Xilinx Licence for Vivado. Requires <strong>2018.3</strong> version for this contribution (best timing results at maximum bandwidth). </li>
 </ul>
 <h2 id="enablement-steps">ENABLEMENT STEPS</h2>
 <p>git clone the "<a href="https://github.com/acastellane/omi_host_fire/tree/no_encrypt_vcu128">no-encrypt_vcu128</a>" branch of Fire design. </p>
-<p>First synthetise, implement and generate bitstream of "FIRE" design for vcu128 using the specific branch as specified in the README.md file.</p>
+<p>First synthetize, implement and generate bitstream of "FIRE" design for the VCU128 using the specific branch as specified in the README.md file.</p>
 <p>git clone the <a href="https://github.com/OpenCAPI/omi_enablement/">https://github.com/OpenCAPI/omi_enablement/</a> and use /python directory with a debugging raspberry pi or any computer with I2C capability to check you can see the design.</p>
 <p>Check Python code documentation at : <a href="../python">Python Documentation</a> for further experiments.</p></div>
             </div>
