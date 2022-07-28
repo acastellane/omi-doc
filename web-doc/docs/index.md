@@ -23,11 +23,24 @@ This Documentation site presents an overview of host and device chips as well as
 - [Gemini device card](./blocs/gemini) design example
 - [OMI Enablement Guide](./blocs/enablement)
 
- All the code and related materials are contributed to different Github repositories: 
+ All the code and related materials are contributed to different Github repositories.
+
+## FMC+ OMI ENABLEMENT GUIDE 
 
 - [https://github.com/OpenCAPI/omi_enablement/](https://github.com/OpenCAPI/omi_enablement/) contains an example of host on a FMC+ board to evaluate DDMIMs modules
-- <https://github.com/OpenCAPI/omi_asic_device_reference_design> contains an ASIC device reference design
-- <https://github.com/OpenCAPI/omi_host_fire> contains a host FPGA reference design
-- <https://github.com/OpenCAPI/omi_device_ice> contains a device FPGA reference design
+
+## HOST SIDE FPGA REFERENCE DESIGN
+
+<https://github.com/OpenCAPI/omi_host_fire> contains a host FPGA reference design
+
+## DEVICE SIDE FPGA REFERENCE DESIGN
+
+<https://github.com/OpenCAPI/omi_device_ice> contains a device FPGA reference design
+
+## DEVICE SIDE ASIC REFERENCE DESIGN
+
+<https://github.com/OpenCAPI/omi_asic_device_reference_design> contains an ASIC device reference design
+
+
 
 

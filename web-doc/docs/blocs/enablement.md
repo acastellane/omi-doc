@@ -2,7 +2,7 @@
 
 ## HARDWARE DESCRIPTION
 
-For the purpose of open sourcing the design, a collaboration between OMI members led to a tuning of an omi host FPGA reference design "[Fire](../fire/)" to be used in a [VCU128 Card] from AMD/Xilinx.
+For the purpose of open sourcing the design, a collaboration between OMI members led to a tuning of an OMIhost FPGA reference design "[Fire](../fire/)" to be used in a [VCU128 Card] from AMD/Xilinx.
 
 [VCU128 Card]: https://www.xilinx.com/products/boards-and-kits/vcu128.htmlhttps://www.xilinx.com/products/boards-and-kits/vcu128.html
 
@@ -47,7 +47,7 @@ Software requirements :
 
 ## ENABLEMENT STEPS
 
-git clone the "[no-encrypt_vcu128](https://github.com/acastellane/omi_host_fire/tree/no_encrypt_vcu128)" branch of Fire design. 
+git clone the "[vcu128_enablement](https://github.com/opencapi/omi_host_fire/tree/vcu128_enablement)" branch of Fire design. 
 
 First synthetize, implement and generate bitstream of "FIRE" design for the VCU128 using the specific branch as specified in the README.md file.
 
